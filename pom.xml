@@ -47,6 +47,13 @@
         <artifactId>tomcat-jsp-api</artifactId>
         <version>${tomcat.version}</version>
     </dependency>
+        <dependency>
+        <groupId>com.jaunt</groupId>
+        <artifactId>jaunt</artifactId>
+        <version>1.1.4</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/src/libraries/jaunt1.1.4.jar</systemPath>
+    </dependency>
   </dependencies>
   <build>
     <finalName>embeddedTomcatSample</finalName>
