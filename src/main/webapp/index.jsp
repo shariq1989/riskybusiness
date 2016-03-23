@@ -4,7 +4,7 @@
 	href='/webjars/bootstrap/3.1.0/css/bootstrap.min.css'>
 
 <body style="background-color: #26393D">
-	<div class="containersss">
+	<div class="container">
 		<div style="background-color: #40627C" class="jumbotron">
 			<h3 style="color: #D0A825">Welcome to the RiskyBusiness App!</h3>
 			<p style="color: #E8E595">Range projection the final score of NBA games calculated in
