@@ -52,7 +52,7 @@
         <artifactId>jaunt</artifactId>
         <version>1.1.4</version>
         <scope>system</scope>
-        <systemPath>${basedir}/src/libraries/jaunt1.1.4.jar</systemPath>
+        <systemPath>${basedir}/src/main/java/libraries/jaunt1.1.4.jar</systemPath>
     </dependency>
   </dependencies>
   <build>
@@ -95,7 +95,7 @@
                 			<artifactId></artifactId>
                 			<version>1.1.4</version>
                 			<packaging>jar</packaging>
-                			<file>${basedir}/src/libraries/jaunt1.1.4.jar</file>
+                			<file>${basedir}/src/main/java/libraries/jaunt1.1.4.jar</file>
             			</configuration>
         			</execution>
     			</executions>
