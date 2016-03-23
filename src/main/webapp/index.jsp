@@ -1,9 +1,11 @@
 <html>
 <body>
 
-<h2>Hello Heroku!</h2>
+<h2>Welcome to the RiskyBusiness App!</h2>
 
-   Today's date: <%= (new java.util.Date()).toLocaleString()%>
+<form>
+  <input type="button" value="Run Projection Engine" name="manualRun">
+</form>
 
 </body>
 </html>
