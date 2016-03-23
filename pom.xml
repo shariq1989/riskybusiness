@@ -23,13 +23,6 @@
 		<version>3.0</version>
 	</dependency>
     <dependency>
-        <groupId>com.jaunt</groupId>
-        <artifactId>jaunt</artifactId>
-        <version>1.1.4</version>
-        <scope>system</scope>
-        <systemPath>/libraries/jaunt1.1.4.jar</systemPath>
-    </dependency>
-    <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
         <artifactId>tomcat-embed-logging-juli</artifactId>
         <version>${tomcat.version}</version>
@@ -80,6 +73,26 @@
                 </execution>
             </executions>
         </plugin>
+            <plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-install-plugin</artifactId>
+    			<version>2.4</version>
+    			<executions>
+        			<execution>
+            			<phase>install</phase>
+            			<goals>
+                			<goal>install-file</goal>
+            			</goals>
+            			<configuration>
+                			<groupId>com.jaunt</groupId>
+                			<artifactId></artifactId>
+                			<version>1.1.4</version>
+                			<packaging>jar</packaging>
+                			<file>${basedir}/src/libraries/jaunt1.1.4.jar</file>
+            			</configuration>
+        			</execution>
+    			</executions>
+			</plugin>
     </plugins>
   </build>
 </project>
