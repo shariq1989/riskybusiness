@@ -1,3 +1,4 @@
+package servlet;
 
 public class BoxScoreModel {
 
