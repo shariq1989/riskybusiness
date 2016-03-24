@@ -1,6 +1,7 @@
 package servlet;
 
 import java.io.IOException;
+import java.text.ParseException;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -24,11 +25,7 @@ public class HelloServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         BoxScoreFetcher scoreFetcher = new BoxScoreFetcher();
 
-        if (request.getParameter("manualRun") != null) {
-        	scoreFetcher.main(null);
-        } else {
-         System.out.println("method not found!");
-        }
+        response.sendRedirect("testPage.jsp");
 
         request.getRequestDispatcher("/WEB-INF/some-result.jsp").forward(request, response);
     }

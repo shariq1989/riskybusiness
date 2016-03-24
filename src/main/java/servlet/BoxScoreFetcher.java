@@ -42,7 +42,7 @@ public class BoxScoreFetcher {
 	}
 
 	// convert raw data to comma separated team scores
-	public static void parseData() throws ParseException {
+	public void parseData() throws ParseException {
 
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		// beginning of the 2015/16 season
