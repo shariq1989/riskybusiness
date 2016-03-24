@@ -17,7 +17,7 @@ import com.jaunt.*;
 
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
 
-public class boxScoreFetcher {
+public class BoxScoreFetcher {
 
 	private static int avgVariance = 0;
 	private static List<BoxScoreModel> scores = new ArrayList<BoxScoreModel>();
@@ -232,7 +232,7 @@ public class boxScoreFetcher {
 		System.out.print(currentData);
 	}
 
-	public static void main(String[] args) {
+	public void main(String[] args) {
 
 		// get data for past games
 		try {
@@ -250,7 +250,7 @@ public class boxScoreFetcher {
 	}
 
 	public static void setScores(List<BoxScoreModel> scores) {
-		boxScoreFetcher.scores = scores;
+		BoxScoreFetcher.scores = scores;
 	}
 
 	public static int getAvgVariance() {
@@ -258,7 +258,7 @@ public class boxScoreFetcher {
 	}
 
 	public static void setAvgVariance(int avgVariance) {
-		boxScoreFetcher.avgVariance = avgVariance;
+		BoxScoreFetcher.avgVariance = avgVariance;
 	}
 
 }

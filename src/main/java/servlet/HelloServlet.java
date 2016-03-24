@@ -19,5 +19,18 @@ public class HelloServlet extends HttpServlet {
 		out.flush();
 		out.close();
 	}
+	
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        BoxScoreFetcher scoreFetcher = new BoxScoreFetcher();
+
+        if (request.getParameter("manualRun") != null) {
+        	scoreFetcher.main(null);
+        } else {
+         System.out.println("method not found!");
+        }
+
+        request.getRequestDispatcher("/WEB-INF/some-result.jsp").forward(request, response);
+    }
 
 }
